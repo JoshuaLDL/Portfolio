@@ -11,8 +11,6 @@
     flex-direction: row;
     justify-content: space-between;
     padding: 20px;
-
-
 }
 
 .menu{
@@ -26,7 +24,6 @@
     gap: 10px;
     transition: all 0.5s;
     font-size: 20px;
-
 }
 
 .menuLinks:hover {
@@ -35,25 +32,47 @@
 
 
 body{
-    background-color:black;
+    background-color: black;
+}
 
+
+.imageSectionOne{
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
 }
 
 .sectionOne{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    background-color: white;
+    grid-template-columns: 1fr 2fr;
+    background-color:none;
     padding: 20px;
-    border: 30px;
-
+    box-sizing: border-box; 
+    border: 2px solid white; 
 }
 
 .innerSectionOne{
     display: flex;
     flex-direction: column;
-    color: black;
-    
+    color: white;
+}
 
+h1{
+    font-family: "Bebas Neue", serif;
+}
 
+.aboutButton{
+    background-color: white;
+    text-decoration-color: black;
+    text-decoration: none;
+    transition: all 0.5s;
+    padding: 10px;
 
 }
+
+.aboutButton:hover{
+    background-color: greenyellow;
+    text-decoration-color: black;
+    text-decoration: none;
+}
+
