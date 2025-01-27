@@ -3,7 +3,6 @@
     font-weight: 400;
     font-style: normal;
   }
-
   
   .montserrat {
     font-family: "Montserrat", serif;
@@ -20,9 +19,12 @@
     flex-direction: row;
     justify-content: space-between;
     padding: 20px;
+    gap: 10px;
 }
 
 .menu{
+    display: flex;
+    flex-direction: row;
     gap: 10px;
 }
 
@@ -48,7 +50,9 @@ body{
 .imageSectionOne{
     display: flex;
     flex-direction: column;
+    align-content: center;
     max-width: 800px;
+    padding: 30px;
 }
 
 .sectionOne{
@@ -66,14 +70,53 @@ body{
     flex-direction: column;
     color: white;
     padding: 20px;
+    padding-left: 100px;
     font-family: "Montserrat", serif;
+    max-width: 600px;
 }
 
 h1{
     font-family: "Bebas Neue", serif;
 }
 
-.Button{
+h2{
+    font-family: "Bebas Neue", serif;
+}
+
+/* Base button styling */
+button {
+    display: inline-block;
+    padding: 15px 20px;
+    margin: 10px 0px;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: #111111;
+    background-color: #aaff00;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: "Bebas Neue", serif;
+  }
+  
+  /* Hover effect */
+  button:hover {
+    background-color: #ffffff;
+  }
+  
+  /* Active effect */
+  button:active {
+    background-color: #aaff00;
+  }
+  
+  /* Disabled state */
+  button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+
+/* button {
     background-color: white;
     text-decoration-color: black;
     text-decoration: none;
@@ -84,16 +127,15 @@ h1{
     font-weight: 400;
     font-size: 20px;
     color: black;
-    width: 6em;
+    width: fit-content;
     content: center;
+} */
 
-}
-
-.Button:hover{
+/* button:hover {
     background-color: greenyellow;
     text-decoration-color: black;
     text-decoration: none;
-}
+} */
 
 .sectionTwo{
     display: grid;
@@ -112,4 +154,57 @@ h1{
     border: 2px solid white; 
     padding: 20px;
     color: white;
+    font-family: "Montserrat", serif;
+}
+
+
+footer{
+    color:white;
+    box-sizing: border-box; 
+    border: 2px solid white; 
+    padding: 20px;
+    margin: 20px;
+    font-family: "Montserrat", serif;
+}
+
+.footer.icons{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    background-color: white;
+    box-sizing: border-box; 
+    border: 2px solid white; 
+    padding: 20px;
+
+}
+
+#instagram{
+    color:white;
+}
+
+
+
+/* Contact.html */
+
+.contactForm{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    color: white;
+    align-content: center;
+    margin: 20px;
+    padding: 20px;
+}
+
+.formInput{
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    font-family: "Montserrat", serif;
+    background-color:none;
+    padding: 20px;
+    box-sizing: border-box; 
+    border: 2px solid white; 
+    /* margin: 20px; */
+    gap: 10px;
+
 }

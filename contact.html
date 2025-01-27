@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio-Site</title>
+ 
+    <link rel="stylesheet" type="text/css" href="style.css" /> 
+    <script defer type="text/javascript" src="script.js"></script>      
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+   
+   <div class="header">
+    <p><a href="/index.html">
+        <img src="#" alt="Logo for portfolio site" width="100" height="132">
+    </a></p>
+        <nav class="menu">
+            <a class="menuLinks" href="#">About</a>
+            <a class="menuLinks" href="/portfolio.html">Portfolio</a>
+            <a class="menuLinks" href="/contact.html">Contact</a>
+        </nav>
+    </div>
+
+   <div> </div>
+    <div class="contactForm">
+        
+        <h1>Contact Us</h1>
+        <form action="/submit-form" method="POST">
+            <div class="formInput">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+        </form>   
+    </div>
+<div> </div>
+</body>
+</html>

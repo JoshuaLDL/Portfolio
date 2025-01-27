@@ -1,0 +1,26 @@
+"projects": [
+    {
+    "title": "Project One",
+    "description": "It's so good",
+    "image": "images/project_1.png",
+    "alt": "some alt text",
+    "Link": "#"
+    },
+
+    {
+    "title": "Project Two",
+    "description": "It's so good",
+    "image": "images/project_2.png",
+    "alt": "some alt text",
+    "Link": "#"
+    },
+
+    {
+     "title": "Project Three",
+    "description": "It's so good",
+    "image": "images/project_3.png",
+    "alt": "some alt text",
+    "Link": "#"
+        },
+    
+]
