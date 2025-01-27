@@ -1,3 +1,4 @@
+/* FONTS */
 .bebas-neue-regular {
     font-family: "Bebas Neue", serif;
     font-weight: 400;
@@ -11,9 +12,6 @@
     font-style: normal;
   }
   
-  
-
-
 .header {
     display: flex;
     flex-direction: row;
@@ -34,7 +32,7 @@
     font-family: "Bebas Neue", serif;
     gap: 10px;
     transition: all 0.5s;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .menuLinks:hover {
@@ -50,19 +48,45 @@ body{
 .imageSectionOne{
     display: flex;
     flex-direction: column;
-    align-content: center;
-    max-width: 800px;
     padding: 30px;
+}
+@media screen and (max-width: 900px) {
+    .imageSectionOne{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
 }
 
 .sectionOne{
     display: grid;
     grid-template-columns: 1fr 2fr;
+    align-items: center;
     background-color:none;
     padding: 20px;
     box-sizing: border-box; 
     border: 2px solid white; 
     margin: 20px;
+}
+@media screen and (max-width: 1920px) {
+    .sectionOne {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        align-items: center;
+        background-color:none;
+        padding: 20px;
+        box-sizing: border-box; 
+        border: 2px solid white; 
+        margin: 20px;
+    }
+}
+@media screen and (max-width: 900px) {
+    .sectionOne {
+        display: grid;
+        grid-template-columns: 1fr;
+       
+    }
 }
 
 .innerSectionOne{
@@ -74,6 +98,18 @@ body{
     font-family: "Montserrat", serif;
     max-width: 600px;
 }
+@media screen and (max-width: 900px) {
+    .innerSectionOne{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        color: white;
+        font-family: "Montserrat", serif;
+        margin: 10px 10px;
+    }
+}
+
 
 h1{
     font-family: "Bebas Neue", serif;
@@ -159,6 +195,8 @@ button {
 
 
 footer{
+    display: flex;
+    flex-direction: column;
     color:white;
     box-sizing: border-box; 
     border: 2px solid white; 
@@ -167,30 +205,19 @@ footer{
     font-family: "Montserrat", serif;
 }
 
-.footer.icons{
+.icons{
     display: flex;
     flex-direction: row;
     color: white;
-    background-color: white;
-    box-sizing: border-box; 
-    border: 2px solid white; 
-    padding: 20px;
-
+    gap: 10px;
 }
-
-#instagram{
-    color:white;
-}
-
-
-
 /* Contact.html */
 
 .contactForm{
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    display: flex;
+    flex-direction: column;
     color: white;
-    align-content: center;
+    align-items: center;
     margin: 20px;
     padding: 20px;
 }
@@ -198,13 +225,22 @@ footer{
 .formInput{
     display: flex;
     flex-direction: column;
-    max-width: 400px;
+    max-width: fit-content;
     font-family: "Montserrat", serif;
     background-color:none;
-    padding: 20px;
+    padding: 30px;
+    margin: 10px;
     box-sizing: border-box; 
     border: 2px solid white; 
     /* margin: 20px; */
     gap: 10px;
+    max-width: 1000px;
+    width: 800px;
+
+}
+
+.inputs{
+    font-size: 15px;
+    padding: 10px;
 
 }

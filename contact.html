@@ -30,24 +30,27 @@
         </nav>
     </div>
 
-   <div> </div>
     <div class="contactForm">
         
-        <h1>Contact Us</h1>
+        <h1>Contact Me</h1>
+        
         <form action="/submit-form" method="POST">
+            
             <div class="formInput">
                 <label for="name">Name</label>
-                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                <input class="inputs" type="text" id="name" name="name" placeholder="Your Name" required>
 
                 <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                <input class="inputs" type="email" id="email" name="email" placeholder="Your Email" required>
 
                 <label for="message">Message</label>
-                <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                <textarea class="inputs" id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
             </div>
+
             <button type="submit">Send Message</button>
         </form>   
     </div>
-<div> </div>
+
+
 </body>
 </html>
