@@ -3,6 +3,15 @@
     font-weight: 400;
     font-style: normal;
   }
+
+  
+  .montserrat {
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
   
 
 
@@ -49,30 +58,58 @@ body{
     padding: 20px;
     box-sizing: border-box; 
     border: 2px solid white; 
+    margin: 20px;
 }
 
 .innerSectionOne{
     display: flex;
     flex-direction: column;
     color: white;
+    padding: 20px;
+    font-family: "Montserrat", serif;
 }
 
 h1{
     font-family: "Bebas Neue", serif;
 }
 
-.aboutButton{
+.Button{
     background-color: white;
     text-decoration-color: black;
     text-decoration: none;
     transition: all 0.5s;
     padding: 10px;
+    margin: 10px 0px;
+    font-family: "Bebas Neue", serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: black;
+    width: 6em;
+    content: center;
 
 }
 
-.aboutButton:hover{
+.Button:hover{
     background-color: greenyellow;
     text-decoration-color: black;
     text-decoration: none;
 }
 
+.sectionTwo{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color:none;
+    padding: 20px;
+    margin: 20px;
+    gap: 20px;
+   
+}
+
+.mainBox{
+    display:flex;
+    flex-direction: column;
+    box-sizing: border-box; 
+    border: 2px solid white; 
+    padding: 20px;
+    color: white;
+}
