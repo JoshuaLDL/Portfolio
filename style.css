@@ -1,0 +1,59 @@
+.bebas-neue-regular {
+    font-family: "Bebas Neue", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+
+
+}
+
+.menu{
+    gap: 10px;
+}
+
+.menuLinks {
+    text-decoration: none;
+    color: white;
+    font-family: "Bebas Neue", serif;
+    gap: 10px;
+    transition: all 0.5s;
+    font-size: 20px;
+
+}
+
+.menuLinks:hover {
+    color: greenyellow;
+}
+
+
+body{
+    background-color:black;
+
+}
+
+.sectionOne{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: white;
+    padding: 20px;
+    border: 30px;
+
+}
+
+.innerSectionOne{
+    display: flex;
+    flex-direction: column;
+    color: black;
+    
+
+
+
+}
