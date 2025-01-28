@@ -67,6 +67,7 @@ body{
     padding: 20px;
     box-sizing: border-box; 
     border: 2px solid white; 
+    border-radius: 8px;
     margin: 20px;
 }
 @media screen and (max-width: 1920px) {
@@ -126,6 +127,10 @@ body{
 
 h1{
     font-family: "Bebas Neue", serif;
+}
+
+.h1{
+    color:white;
 }
 
 h2{
@@ -201,6 +206,7 @@ button {
     flex-direction: column;
     box-sizing: border-box; 
     border: 2px solid white; 
+    border-radius: 8px;
     padding: 20px;
     color: white;
     font-family: "Montserrat", serif;
@@ -233,6 +239,7 @@ footer{
     align-items: center;
     margin: 20px;
     padding: 20px;
+    
 }
 
 .formInput{
@@ -245,15 +252,142 @@ footer{
     margin: 10px;
     box-sizing: border-box; 
     border: 2px solid white; 
+    border-radius: 8px;
     /* margin: 20px; */
     gap: 10px;
     max-width: 1000px;
     width: 800px;
 
 }
+@media screen and (max-width: 850px) {
+    .formInput{
+        display: flex;
+        flex-direction: column;
+        max-width: fit-content;
+        font-family: "Montserrat", serif;
+        background-color:none;
+        padding: 30px;
+        margin: 10px;
+        box-sizing: border-box; 
+        border: 2px solid white; 
+        border-radius: 8px;
+        /* margin: 20px; */
+        gap: 10px;
+        max-width: 1000px;
+        width: 500px;
+    
+    }}
+
 
 .inputs{
     font-size: 15px;
     padding: 10px;
+    border-radius: 8px;
 
 }
+
+
+/* Portfolio Project Cards */
+
+.project-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: none;
+    box-sizing: border-box; 
+    border: 2px solid white; 
+  }
+  
+  .project-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+  }
+  
+  .project-card h3 {
+    font-size: 1.5em;
+    margin: 8px 0;
+    color:white;
+    font-family: "Bebas Neue", serif;
+  }
+  
+  .project-card p {
+    color: #868686;
+    font-family: "Montserrat", serif;
+  }
+  
+  .project-card button {
+    background-color: #aaff00;
+    color: #000000;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .project-card button:hover {
+    background-color: #ffffff;
+  }
+
+  #portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    gap:20px;
+
+  }
+
+  #portfolio-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    width: 1200px;
+    
+  }
+  @media screen and (max-width: 1249px) {
+    #portfolio-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        width: 1000px;
+        
+        
+      }
+  }
+  @media screen and (max-width: 1050px) {
+    #portfolio-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        max-width: 500px;
+        
+      }
+  }
+
+  .aboutSection{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color:none;
+    padding: 20px;
+    box-sizing: border-box; 
+    border: 2px solid white; 
+    border-radius: 8px;
+    margin: 20px;
+    color: white;
+  }
+
+  .innerAboutSection{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    font-family: "Montserrat", serif;
+  }
+
+  .imageAboutSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }

@@ -1,26 +1,27 @@
+{
 "projects": [
     {
     "title": "Project One",
-    "description": "It's so good",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     "image": "images/project_1.png",
     "alt": "some alt text",
-    "Link": "#"
+    "link": "https://example.com/project1"
     },
 
     {
     "title": "Project Two",
-    "description": "It's so good",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     "image": "images/project_2.png",
     "alt": "some alt text",
-    "Link": "#"
+    "link": "https://example.com/project1"
     },
 
     {
      "title": "Project Three",
-    "description": "It's so good",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     "image": "images/project_3.png",
     "alt": "some alt text",
-    "Link": "#"
-        },
+    "link": "https://example.com/project1"
+        }
     
-]
+]}
