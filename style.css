@@ -384,10 +384,21 @@ footer{
     flex-direction: column;
     /* align-items: center; */
     font-family: "Montserrat", serif;
+    text-decoration: none;
   }
 
   .imageAboutSection{
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+
+  .aboutSectionTwo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    text-decoration: none;
+    
+
   }
