@@ -81,3 +81,18 @@ fetch('./projects.json')
 function viewProject(link) {
   window.open(link, '_blank'); // Open the project link in a new tab
 }
+
+
+// Radial Menu
+// const drop = document.querySelector('#dropdown');
+// drop.addEventListener('mouseenter', show);
+// function show() {
+//     const menu = document.querySelector('#dropdown-content');
+//     menu.classList.remove('hidden')
+// }
+// drop.addEventListener('mouseleave', hide);
+// function hide() {
+//     const menu = document.querySelector('#dropdown-content');
+//     const drop = document.querySelector('.dropdown');
+//     menu.classList.add('hidden')
+// }

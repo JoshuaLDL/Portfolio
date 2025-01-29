@@ -137,6 +137,14 @@ h2{
     font-family: "Bebas Neue", serif;
 }
 
+h5{
+    font-family: "Montserrat", serif;
+    font-style: bold;
+    padding: 2px 0px;
+    margin: 0px 0px;
+    
+}
+
 /* Base button styling */
 button {
     display: inline-block;
@@ -156,6 +164,28 @@ button {
   
   /* Hover effect */
   button:hover {
+    background-color: #ffffff;
+  }
+
+  /* Base button styling */
+.button {
+    display: inline-block;
+    padding: 15px 20px;
+    margin: 10px 0px;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: #111111;
+    background-color: #aaff00;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: "Bebas Neue", serif;
+  }
+  
+  /* Hover effect */
+.button:hover {
     background-color: #ffffff;
   }
   
@@ -227,9 +257,22 @@ footer{
 .icons{
     display: flex;
     flex-direction: row;
-    color: white;
     gap: 10px;
+    font-size: 25px;
 }
+
+.socialLinks{
+    display: flex;
+    flex-direction: row;
+    color: #aaff00;
+    transition: all 0.5s;
+    text-decoration: none;
+}
+
+.socialLinks:hover{
+    color: #ffffff;
+}
+
 /* Contact.html */
 
 .contactForm{
@@ -378,6 +421,12 @@ footer{
     margin: 20px;
     color: white;
   }
+  @media screen and (max-width: 900px) {
+  .aboutSection{
+    display: grid;
+    grid-template-columns: 1fr;
+  }}
+
 
   .innerAboutSection{
     display: flex;
@@ -400,5 +449,27 @@ footer{
     gap: 20px;
     text-decoration: none;
     margin: 20px;
+  }
+
+  @media screen and (max-width: 900px) {
+    .aboutSectionTwo {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }}
+
+  .aboutMainBox{
+    display:flex;
+    flex-direction: column;
+    box-sizing: border-box; 
+    border: 2px solid white; 
+    border-radius: 8px;
+    padding: 20px;
+    color: white;
+    font-family: "Montserrat", serif;
+    text-decoration: none;
 
   }
+
+  /* .hidden{
+    display:none;
+  } */
