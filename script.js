@@ -1,4 +1,4 @@
-
+"use strict";
 
 // document.querySelector("form").addEventListener("submit", function (event) {
 //     // Prevent form submission
