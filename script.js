@@ -83,7 +83,8 @@ function viewProject(link) {
 }
 
 
-// Radial Menu
+// RADIAL MENU
+
 // const drop = document.querySelector('#dropdown');
 // drop.addEventListener('mouseenter', show);
 // function show() {
@@ -96,3 +97,65 @@ function viewProject(link) {
 //     const drop = document.querySelector('.dropdown');
 //     menu.classList.add('hidden')
 // }
+
+
+
+// ANIMATING H1,H2,H3 (Version One)
+
+// document.addEventListener("DOMContentLoaded", function() {  
+//     const headings = document.querySelectorAll("h1, h2, h3");  // Select all h1 elements
+//     const speed = 100;  // Typing speed in milliseconds
+
+//     function typeEffect(element, text, index = 0) {
+//         if (index < text.length) {
+//             element.innerHTML += text.charAt(index);
+//             setTimeout(() => typeEffect(element, text, index + 1), speed);
+//         } else {
+//             element.style.borderRight = "none"; // Remove cursor after typing
+//         }
+//     }
+
+//     headings.forEach((heading) => {
+//         const text = heading.textContent.trim();  // Store original text
+//         heading.textContent = "";  // Clear the text before typing starts
+//         heading.style.borderRight = "2px solid black";  // Simulated cursor
+//         typeEffect(heading, text);
+//     });
+// });
+
+// ANIMATING H1,H2,H3 (Version Two with Delay on Scroll)
+
+document.addEventListener("DOMContentLoaded", function() {  
+    const headings = document.querySelectorAll("h1, h2, h3");  // Select all h1 elements
+    const speed = 100;  // Typing speed in milliseconds
+
+    function typeEffect(element, text, index = 0) {
+        if (index < text.length) {
+            element.innerHTML += text.charAt(index);
+            setTimeout(() => typeEffect(element, text, index + 1), speed);
+        } else {
+            element.style.borderRight = "none"; // Remove cursor after typing
+        }
+    }
+
+    function handleIntersection(entries, observer) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting && !entry.target.dataset.typed) {  // Only trigger once
+                const text = entry.target.textContent.trim();
+                entry.target.textContent = "";
+                entry.target.style.borderRight = "2px solid black";  // Simulated cursor
+                typeEffect(entry.target, text);
+                entry.target.dataset.typed = "true";  // Prevent re-triggering
+            }
+        });
+    }
+
+    // Set up Intersection Observer
+    const observer = new IntersectionObserver(handleIntersection, {
+        root: null,   // Observe relative to the viewport
+        threshold: 1 // Trigger when 60% of the element is visible
+    });
+
+    // Observe each heading
+    headings.forEach(h1 => observer.observe(h1));
+});

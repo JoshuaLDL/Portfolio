@@ -97,7 +97,7 @@ body{
     padding: 20px;
     padding-left: 100px;
     font-family: "Montserrat", serif;
-    max-width: 600px;
+    max-width: 700px;
 }
 @media screen and (max-width: 900px) {
     .innerSectionOne{
@@ -127,6 +127,7 @@ body{
 
 h1{
     font-family: "Bebas Neue", serif;
+    color:white;
 }
 
 .h1{
@@ -221,15 +222,24 @@ button {
     text-decoration: none;
 } */
 
-.sectionTwo{
+.sectionTwo {
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-color:none;
     padding: 20px;
     margin: 20px;
     gap: 20px;
-   
 }
+
+@media screen and (max-width: 850px) {
+    .sectionTwo {
+        display: grid;
+        grid-template-columns: 1fr;
+       
+    }
+
+}
+
 
 .mainBox{
     display:flex;
@@ -440,6 +450,7 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 30px 0px;
   }
 
 
@@ -454,7 +465,7 @@ footer{
   @media screen and (max-width: 900px) {
     .aboutSectionTwo {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
       }}
 
   .aboutMainBox{
@@ -473,3 +484,22 @@ footer{
   /* .hidden{
     display:none;
   } */
+
+
+  .typeWriter {
+    font-family: monospace;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid black;
+    display: inline-block;
+    font-family: "Bebas Neue", serif;
+}
+
+.typeWriter2 {
+    font-family: monospace;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid black;
+    display: inline-block;
+    font-family: "Bebas Neue", serif;
+}
