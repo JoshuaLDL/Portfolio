@@ -331,12 +331,10 @@ footer{
     
     }}
 
-
 .inputs{
     font-size: 15px;
     padding: 10px;
     border-radius: 8px;
-
 }
 
 
@@ -481,25 +479,11 @@ footer{
 
   }
 
-  /* .hidden{
-    display:none;
-  } */
-
-
-  .typeWriter {
+  /* .typeWriter {
     font-family: monospace;
     white-space: nowrap;
     overflow: hidden;
     border-right: 2px solid black;
     display: inline-block;
     font-family: "Bebas Neue", serif;
-}
-
-.typeWriter2 {
-    font-family: monospace;
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 2px solid black;
-    display: inline-block;
-    font-family: "Bebas Neue", serif;
-}
+} */
