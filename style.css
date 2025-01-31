@@ -48,7 +48,9 @@ body{
 .imageSectionOne{
     display: flex;
     flex-direction: column;
-    padding: 30px;
+    padding: 10px;
+    max-width: 100%;
+    height: auto;
 }
 @media screen and (max-width: 900px) {
     .imageSectionOne{
@@ -58,6 +60,15 @@ body{
         padding: 10px;
     }
 }
+@media screen and (max-width: 500px) {
+    .imageSectionOne{
+       display: flex;
+       flex-direction: column;
+       max-width: 100%;
+       height: auto;
+    }
+}
+
 
 .sectionOne{
     display: grid;
@@ -68,7 +79,7 @@ body{
     box-sizing: border-box; 
     border: 2px solid white; 
     border-radius: 8px;
-    /* margin: 20px; */
+    margin: 20px;
 }
 @media screen and (max-width: 1920px) {
     .sectionOne {
@@ -79,9 +90,8 @@ body{
         padding: 20px;
         box-sizing: border-box; 
         border: 2px solid white; 
-        margin: 20px;
-    }
-}
+        /* margin: 20px; */
+    }}
 @media screen and (max-width: 900px) {
     .sectionOne {
         display: grid;
@@ -107,7 +117,6 @@ body{
         text-align: center;
         color: white;
         font-family: "Montserrat", serif;
-        /* margin: 10px 10px; */
         padding: 10px;
     }
 }
@@ -119,12 +128,10 @@ body{
         text-align: center;
         color: white;
         font-family: "Montserrat", serif;
-        /* margin: 10px; */
-        padding: 10px;
     }
 }
 
-/* @media screen and (max-width: 450px) {
+@media screen and (max-width: 450px) {
     .innerSectionOne{
         display: flex;
         flex-direction: column;
@@ -132,9 +139,7 @@ body{
         text-align: center;
         color: white;
         font-family: "Montserrat", serif;
-        /* margin: 10px; */
-        /* padding: 10px; */
-    /* }} */
+    }}
 
 
 h1{
@@ -237,7 +242,7 @@ button {
 .sectionTwo {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background-color:none;
+    background-color: none;
     padding: 20px;
     margin: 20px;
     gap: 20px;
@@ -497,6 +502,7 @@ footer{
 
   }
 
+  /* Didn't need because used querySelectorAll */
   /* .typeWriter {
     font-family: monospace;
     white-space: nowrap;
